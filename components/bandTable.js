@@ -6,8 +6,10 @@ export default class BandTable extends React.Component {
     return <ul className='bandtable'>
       {
         this.props.mugiwaras.map((mugiwara) => {
-            return <BandRow key={mugiwara.name} 
-                  name={mugiwara.name} />
+            return <BandRow
+               key={mugiwara.name}
+               name={mugiwara.name}
+               phase={this.props.onPhase} />
         })
       }
     </ul>

@@ -8,3 +8,4 @@ export default class BandAvatar extends React.Component{
 }
 
 //export default bandAvatar;
+// className='' < para css

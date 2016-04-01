@@ -1,0 +1,15 @@
+.bandtable{
+  width: 300px;
+  border: 2px solid blue;
+}
+  /*background-color: green;*/
+.bandrow {
+  padding-top: 5px;
+  border: 2px solid red;
+}
+.avatar {
+  border: 2px solid green;
+}
+.bandmessage {
+  border: 2px solid orange;
+}
