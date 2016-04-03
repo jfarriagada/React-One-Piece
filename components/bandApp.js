@@ -1,6 +1,7 @@
 import React from 'react';
 import BandTable from './bandTable';
 import BandChat from './bandChat';
+import uid from 'uid';
 
 export default class BandApp extends React.Component {
   /* constructor(props) se ocupar cuando se va a renderizar
@@ -13,7 +14,8 @@ export default class BandApp extends React.Component {
   // update state de chat
   onPhase(name) {
     var text = `${name}, ${name} !!`;
-    this.state.messages.push({ text: text });
+    var message = { id: uid(),text: text };
+    this.state.messages.push(message);
     var messages = this.state.messages;
     this.setState({ messages: messages });
   }

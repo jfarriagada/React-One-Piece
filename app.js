@@ -3,6 +3,9 @@ import BandApp from './components/bandApp';
 import HelloComponent from './components/hello';
 import ReactDOM from 'react-dom';
 
+/*
+BandApp tiene los components BandTable y BandChat dentro de un div
+*/
 ReactDOM.render(
   <BandApp />,
   document.getElementById('container-mugiwara')

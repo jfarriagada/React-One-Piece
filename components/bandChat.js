@@ -6,7 +6,7 @@ export default class BandChat extends React.Component {
     return <ul className='bandchat' >
       {
         this.props.messages.map((message) => {
-            return <BandMessage message={message} />
+            return <BandMessage key={message.id} message={message} />
         })
       }
     </ul>
