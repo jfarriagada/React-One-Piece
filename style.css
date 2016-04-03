@@ -1,6 +1,9 @@
+.hello {
+  border: 5px solid purple;
+}
 .bandtable{
   width: 300px;
-  border: 2px solid blue;
+  border: 5px solid blue;
 }
   /*background-color: green;*/
 .bandrow {
@@ -9,6 +12,9 @@
 }
 .avatar {
   border: 2px solid green;
+}
+.bandchat {
+  border: 5px solid brown;
 }
 .bandmessage {
   border: 2px solid orange;

@@ -3,7 +3,7 @@ import BandRow from './bandRow';
 
 export default class BandTable extends React.Component {
   render(){
-    return <ul className='bandtable'>
+    return <div className='bandtable large-3 medium-3 columns large-offset-2'>
       {
         this.props.mugiwaras.map((mugiwara) => {
             return <BandRow
@@ -12,6 +12,6 @@ export default class BandTable extends React.Component {
                phase={this.props.onPhase} />
         })
       }
-    </ul>
+    </div>
   }
 }

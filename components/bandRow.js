@@ -8,9 +8,9 @@ export default class BandRow extends React.Component {
   }
 
   render(){
-    return <li className='bandrow' onClick={this.onClick.bind(this)} >
+    return <div className='bandrow' onClick={this.onClick.bind(this)} >
       <BandAvatar name={this.props.name} />
       {this.props.name}
-    </li>
+    </div>
   }
 }

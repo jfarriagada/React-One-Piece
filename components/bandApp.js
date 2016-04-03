@@ -26,14 +26,13 @@ export default class BandApp extends React.Component {
       { name: 'Roronoa_Zoro' },
       { name: 'Sanji' },
       { name: 'Monkey_D._Luffy' },
-      { name: 'Brook' },
       { name: 'Franky' }
     ];
 
     // se engloban los dos components en un div pata que retorne mas de uno
     return <div className='bandapp'>
       <BandTable mugiwaras={mugiwaras} onPhase={this.onPhase.bind(this)} />
-      <BandChat  messages={this.state.messages} />
+      <BandChat messages={this.state.messages} />
     </div>
   }
 }

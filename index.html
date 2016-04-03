@@ -4,27 +4,23 @@
     <meta charset="utf-8">
     <title></title>
     <link rel='stylesheet' type='text/css' href='style.css'>
+    <link rel='stylesheet' type='text/css' href='./foundation-6.2.0-complete/css/foundation.min.css'>
   </head>
   <body>
+    <div class="large-12 columns">
+      <div class="primary callout">
+        <p>Cada cuadro de color representa un Component de React distinto que en ocaciones se encuentran uno dentro del otro,
+            (hijo y padre), al hacer click en el Component de la imagen se agrega un mensaje.</p>
+      </div>
+    </div>
 
-    <div id="container"></div>
-    <div id="container-mugiwara"></div>
-
-    <!--<script type="text/jsx;harmony=true">
-      class HelloComponent extends React.Component {
-        render(){
-          return <h1> React + ES6 {this.props.name} !! </h1>
-        }
-      }
-
-      React.render(<HelloComponent name="farriagada" />, document.getElementById("container"));
-
-      setTimeout(() => {
-        React.render(<HelloComponent name="pancho" />, document.getElementById("container"));
-      },3000)
-    </script>-->
+    <div id="container"> </div>
+    <div id="container-mugiwara"> </div>
 
     <!-- Tiene que quedar al final -->
     <script src="dist/bundle.js"></script>
+    <script src="./foundation-6.2.0-complete/js/vendor/foundation.min.js"></script>
+    <script src="./foundation-6.2.0-complete/js/vendor/jquery.js"></script>
+
   </body>
 </html>
